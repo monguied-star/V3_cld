@@ -1,15 +1,15 @@
 /* Mis Finanzas Pro v2.2 - conceptos inteligentes */
 const FINANCE_CONCEPTS = {
   Egreso: [
-    'Transporte','Alimentación','Mercado y hogar','Vivienda y arriendo',
-    'Servicios públicos','Salud','Deporte y bienestar','Vestuario y calzado',
-    'Educación','Entretenimiento','Cuidado personal','Familia e hijos',
-    'Mascotas','Tecnología','Deudas y créditos','Seguros','Impuestos',
-    'Mantenimiento y reparaciones','Viajes','Regalos y donaciones','Otros gastos'
+    'Transporte','Alimentación','Mercado','Hogar',
+    'Servicios públicos','Salud','Deporte/bienestar','Vestuario/calzado',
+    'Educación','Entretenimiento','Cuidado personal','Familia',
+    'Mascotas','Tecnología','Deudas/créditos','Impuestos',
+    'Viajes','Regalos','Otros'
   ],
   Ingreso: [
-    'Salario','Honorarios','Trabajo independiente','Ventas','Bonificaciones',
-    'Comisiones','Rendimientos e intereses','Arriendos recibidos',
+    'Salario','Trabajo independiente','Ventas','Bonificaciones',
+    'Comisiones','Rendimientos/intereses',
     'Reembolsos','Regalos recibidos','Otros ingresos'
   ]
 };

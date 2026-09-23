@@ -3,24 +3,6 @@
 App de finanzas personales (PWA), 100% en el navegador — los datos se guardan en
 `localStorage` del dispositivo (nada se envía a un servidor).
 
-## Qué se corrigió en esta versión
-
-- **Sugerencias de categoría desincronizadas**: al abrir "Nuevo movimiento" ahora
-  se refresca correctamente la lista de categorías según el tipo (Ingreso/Egreso)
-  seleccionado, en vez de mostrar sugerencias del tipo anterior.
-- **Se borraba la categoría al cambiar el tipo**: cambiar Ingreso↔Egreso ya no
-  vacía el campo de categoría; solo actualiza las sugerencias.
-- **Service Worker incompleto**: faltaba `categories.js` y los íconos en el
-  precache — sin conexión, esa petición fallaba y el Service Worker devolvía el
-  HTML en su lugar (rompía el script). Ya está corregido y solo se usa el
-  *fallback* de `index.html` en navegación, no en cada archivo.
-- **Restaurar copia JSON podía romper la app**: si el archivo restaurado no
-  tenía `settings`/`budgets`/`goals` completos, la app fallaba al guardar.
-  Ahora se normaliza siempre contra los valores por defecto.
-- **Manifest sin íconos**: se agregaron íconos 192/512 (normales y
-  *maskable*) y `apple-touch-icon` para que se pueda instalar correctamente
-  en Android/Chrome y en iPhone.
-
 ## Estructura
 
 ```
