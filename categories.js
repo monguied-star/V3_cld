@@ -1,4 +1,4 @@
-/* Mis Finanzas Pro v2.2 - conceptos inteligentes */
+
 const FINANCE_CONCEPTS = {
   Egreso: [
     'Transporte','Alimentación','Mercado','Hogar',
